@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color: rgb(56, 5, 138);">
+        <h1> U&I</h1>
+        <h2> im sorry i made you mad<3</h2>
+
+    </header>
+
+    <main>
+<div class="container">
+    <h1>Photos of us :D</h1>
+    <div class="image-container">
+        <div class="image"><img src="Captures/images/img-1.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-2.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-3.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-4.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-5.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-6.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-7.jpg" alt=""></div>
+        <div class="image"><img src="Captures/images/img-8.jpg" alt=""></div>
+    </div>
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="Captures/images/img-1.jpg" alt="">
+    </div>
+
+</div>
+<script>
+
+    document.querySelectorAll('.image-container img').forEach(image=>{
+image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+}
+    });
+
+    document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+</script>
+    </main>
+    
+</body>
+</html>
